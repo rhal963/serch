@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اختر المتصفح</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria_%282011%E2%80%93present%29.svg/2560px-Flag_of_Syria_%282011%E2%80%93present%29.svg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 60px;
+      font-size: 2.5em;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 15px;
+    }
+
+    .browsers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .browser-button {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .browser-button:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    .browser-button img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>اختر المتصفح الذي تريد البحث فيه</h1>
+
+  <div class="browsers">
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.svg" alt="Chrome">
+      <div>Google Chrome</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mozilla_Firefox_3.5_logo_256.png" alt="Firefox">
+      <div>Mozilla Firefox</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Edge_logo_%282019%29.svg" alt="Edge">
+      <div>Microsoft Edge</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Safari">
+      <div>Safari</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg" alt="Opera">
+      <div>Opera</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Brave_logo.svg" alt="Brave">
+      <div>Brave</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Vivaldi_web_browser_logo.svg" alt="Vivaldi">
+      <div>Vivaldi</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Tor_Browser_icon.svg" alt="Tor">
+      <div>Tor Browser</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/UC_Browser_logo.svg" alt="UC">
+      <div>UC Browser</div>
+    </div>
+    <div class="browser-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Maxthon_logo_2020.svg" alt="Maxthon">
+      <div>Maxthon</div>
+    </div>
+  </div>
+
+  <footer>صممت هذه الصفحة من قبل أبو حسن 💙</footer>
+</body>
+</html>
