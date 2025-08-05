@@ -11,8 +11,10 @@
             margin: 0;
             font-family: 'Cairo', sans-serif;
             background-image: url('assets/background.png');
-            background-size: cover;
-            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;     /* 👈 هذا يجعل الصورة بكامل الحجم دون قص */
+            background-position: top center;
+            background-color: black;      /* خلفية احتياطية */
             color: white;
             text-align: center;
         }
